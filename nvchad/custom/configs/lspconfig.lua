@@ -15,6 +15,11 @@ local servers = {
   "jdtls"
 }
 
+lspconfig.omnisharp.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "dotnet", "/home/xenedium/.local/share/nvim/mason/packages/omnisharp/libexec/OmniSharp.dll" }
+}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
