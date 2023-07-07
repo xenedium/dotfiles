@@ -37,6 +37,15 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    -- Rust stuff
+    "rust_analyzer",
+
+    -- Java stuff
+    "jdtls",
+
+    -- Python stuff
+    "pyright"
   },
 }
 
